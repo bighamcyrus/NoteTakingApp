@@ -1,19 +1,3 @@
-const express = require('express');
-const router =express();
-const userRoutes = require(./userRoutes)
-// Import our modular routers for /tips and /feedback
-// const tipsRouter = require('./tips');
-// const feedbackRouter = require('./feedback');
-router.use('user', userRoutes);
-const app = express();
-
-// app.use('/tips', tipsRouter);
-// app.use('/feedback', feedbackRouter);
-
-
-
-
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -197,6 +181,3 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
-
-
-module.exports = app;
